@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\dist",
+    "\\dist\\js"
   ],
+  "SelectedNode": "\\dist\\js\\Report.js",
   "PreviewInSolutionExplorer": false
 }

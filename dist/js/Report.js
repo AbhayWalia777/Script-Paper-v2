@@ -398,11 +398,11 @@ function SetCompletedTradeDetails(item) {
     for (var i = 0; i < ctable.rows.length; i++) {
         var status = $(ctable.rows[i].cells[4]).text();
         if (status == "TARGET" || status == "TARGET2" || status == "TARGET3") {
-            $(ctable.rows[i].cells[4]).css("background-color", "#14a964");
+            $(ctable.rows[i].cells[4]).css("background-color", "dodgerblue");
             $(ctable.rows[i].cells[4]).css("color", "white");
         }
         if (status == "STOPLOSS") {
-            $(ctable.rows[i].cells[4]).css("background-color", "#d83824");
+            $(ctable.rows[i].cells[4]).css("background-color", "#ff4500b5");
             $(ctable.rows[i].cells[4]).css("color", "white");
         }
         var ProfitLoss = $(ctable.rows[i].cells[11]).text();
