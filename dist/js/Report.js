@@ -370,9 +370,9 @@ function SetCompletedTradeDetails(item) {
         item.exitPrice = (item.exitPrice).toFixed(5);
         item.profitOrLoss = (item.profitOrLoss).toFixed(5);
     } else {
-        item.entryPrice = (item.entryPrice).toFixed(4);
-        item.exitPrice = (item.exitPrice).toFixed(4);
-        item.profitOrLoss = (item.profitOrLoss).toFixed(4);
+        item.entryPrice = (item.entryPrice).toFixed(2);
+        item.exitPrice = (item.exitPrice).toFixed(2);
+        item.profitOrLoss = (item.profitOrLoss).toFixed(2);
     }
 
     var netProfitLoss = item.profitOrLoss - item.brokerage;
