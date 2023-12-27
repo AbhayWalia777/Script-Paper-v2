@@ -357,7 +357,7 @@ function SetCompletedTradeDetails(item) {
     if (item.status != "CANCELED" && item.status != "REJECTED" && item.isLive == false && item.isSoftDeleted == 0) {
         deleteTradeBtn = '<a href="javascript:void(0)" onclick="DeleteCompletedTrade(' + item.completedTradeID + ')" data-bind=' + item.completedTradeID + ' style="margin-right:10px;" ><i class="fa fa-trash-o"></i> </a> ';
     } else {
-        deleteTradeBtn = "";
+        deleteTradeBtn = '<a hidden href="javascript:void(0)" onclick="DeleteCompletedTrade(' + item.completedTradeID + ')" data-bind=' + item.completedTradeID + ' style="margin-right:10px;" ><i class="fa fa-trash-o"></i> </a> ';
     }
     var roleid = $("#Role_Id").val();
     if (roleid != 4) {
