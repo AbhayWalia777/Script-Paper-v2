@@ -148,7 +148,7 @@ function SetCompletedTradeDetails(item) {
         }
 
     var sQty;
-    if (item.TRADING_UNIT_TYPE == 1) {
+    if (item.tradinG_UNIT_TYPE == 1) {
         sQty = item.Qty / item.ScriptLotSize;
     }
     else {
@@ -158,7 +158,7 @@ function SetCompletedTradeDetails(item) {
             sQty = item.Qty;
         }
     }
-    var GetQtyType = item.TRADING_UNIT.toLowerCase() == "qty" ? 'U' : '';
+    var GetQtyType = item.tradinG_UNIT.toLowerCase() == "qty" ? 'U' : '';
     var css = "row-New-Theme watchlistRow";
 
 if(item.ScriptExchange == "FOREX" && $("#companyINitials").val() == "RT")
