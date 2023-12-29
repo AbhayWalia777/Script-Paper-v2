@@ -605,3 +605,98 @@ body:not(.bodyLight) .mobile-context-menu-text {
 .form-group {
     margin-bottom: 10px !important;
 }
+
+    #Nav_Footer_Trade_Index {
+        color: white !important;
+    }
+
+    .watchlist-setting {
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        float: right !important;
+    }
+
+    .setting {
+        font-size: 27px;
+    }
+
+    @media screen and (max-width:2600px) and (min-width:768px) {
+        ul .watchlistFilter li ul.dropdown {
+            min-width: 100%;
+            display: none;
+            position: absolute;
+            z-index: 999;
+            right: 0;
+        }
+    }
+
+    @media screen and (max-width:2600px) and (min-width:768px) {
+        ul.watchlistFilter {
+            padding: 0;
+            list-style: none;
+            display: inline-flex;
+            float: right;
+        }
+    }
+
+    @media screen and (max-width:767px) and (min-width:320px) {
+        ul.watchlistFilter {
+            padding: 0;
+            list-style: none;
+            display: inline-flex;
+            float: left;
+        }
+
+            ul.watchlistFilter li {
+                padding: 0px !important;
+            }
+    }
+
+    .ui-autocomplete {
+        z-index: 2147483647;
+    }
+
+    @media screen and (max-width:767px) and (min-width:320px) {
+        ul.watchlistFilter li ul.dropdown {
+            min-width: 100%;
+            display: none;
+            position: absolute;
+            z-index: 999;
+            right: 0;
+        }
+    }
+
+    ul.watchlistFilter li {
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        padding: 15px;
+    }
+
+        ul.watchlistFilter li a:hover {
+            color: #4cb8ca;
+        }
+
+        ul.watchlistFilter li:hover ul.dropdown {
+            display: block;
+        }
+
+        ul.watchlistFilter li ul.dropdown li {
+            display: block;
+        }
+
+    li .add-script {
+    }
+
+    #buySellModel .modal-body {
+        overflow: scroll;
+        height: 80vh !important;
+    }
+
+    .no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
