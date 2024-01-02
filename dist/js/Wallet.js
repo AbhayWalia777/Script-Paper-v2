@@ -4,7 +4,7 @@
         source: function (request, response) {
 
             $.ajax({
-                url: "/Strategy/GetUserList",
+                url: "/admin/GetUserList",
                 type: "GET",
                 dataType: "json",
                 data: { Search: request.term },
