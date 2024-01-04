@@ -1092,7 +1092,11 @@ function ProceedSqOf() {
         traditional: !0,
         success: function (e) {
             var t = JSON.parse(e);
+            setTimeout(function () {
+                location.reload();
+            }, 3000); // 3000 milliseconds = 3 seconds
             return 1 == t.exceptionDTO.id ? toastr.success(t.exceptionDTO.Msg) : 0 == t.exceptionDTO.id ? toastr.success(t.exceptionDTO.Msg) : 2 == t.exceptionDTO.id && toastr.success(t.exceptionDTO.Msg), SetTradeData(), !1;
+
         },
     }),
         $("#btnProceedSquareOff").removeAttr("disabled"),

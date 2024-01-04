@@ -116,9 +116,11 @@ $(document).ready(function () {
                     var Table = $('#tbllCoupons').DataTable();
                     Table.clear().draw();
                     Table.innerHTML = "";
-                    $.each(data, function (i, coupon) {
-                        setCouponsData(coupon);
-                    })
+                    $.each(data, function (i, c) {
+
+                        $.each(c, function (i, coupon) {
+                            setCouponsData(coupon);
+                        });
                     $('#coupons-modal').modal('show');
                 }
             });
