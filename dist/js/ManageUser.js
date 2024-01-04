@@ -121,6 +121,7 @@ $(document).ready(function () {
                         $.each(c, function (i, coupon) {
                             setCouponsData(coupon);
                         });
+                    });
                     $('#coupons-modal').modal('show');
                 }
             });
