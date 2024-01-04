@@ -1392,15 +1392,15 @@ function ShowDetails(e) {
 function HideDetails(e) {
     $(e).css("display", "none"), $("#TranDetail").remove();
 }
-document.getElementById("filterBtn").addEventListener("click", function () {
-    document.getElementById("closeBtn").classList.remove("hidden"), document.getElementById("filterBtn").classList.add("hidden"), $(".FilerDiv").css("display", "inline-flex");
-}),
-    document.getElementById("closeBtn").addEventListener("click", function () {
-        document.getElementById("filterBtn").classList.remove("hidden"), document.getElementById("closeBtn").classList.add("hidden"), $(".FilerDiv").css("display", "none");
-    }),
-    $("#SearchScript").on("keyup", function () {
-        SetTradeDataForWatch();
-    });
+$("#SearchScript").on("keyup", function () {
+    SetTradeDataForWatch();
+});
 $("#DrScriptExchange").on("change", function () {
+    if ($('#DrScriptExchange').val() == '') {
+        $('#SearchScript').hide();
+        $('#SearchScript').val('');
+    }
+    else
+        $('#SearchScript').show();
     SetTradeDataForWatch();
 });
